@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#flipbook {
+  width: 750px;        /* Ukuran diperbesar */
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  background-color: white;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+.page img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* Gambar tidak terpotong */
+}
+
+.play-button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 18px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background-color: rgba(255,255,255,0.7);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}

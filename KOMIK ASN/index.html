@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Flipbook dengan Audio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="flipbook">
+    <div class="page" data-page="1">
+      <img src="images/Page 1.png" alt="Page 1">
+      <button class="play-button" onclick="playAudio(1)">🔊</button>
+    </div>
+    <div class="page" data-page="2">
+      <img src="images/Page 2.png" alt="Page 2">
+      <button class="play-button" onclick="playAudio(2)">🔊</button>
+    </div>
+    <div class="page" data-page="3">
+      <img src="images/Page 3.png" alt="Page 3">
+      <button class="play-button" onclick="playAudio(3)">🔊</button>
+    </div>
+    <div class="page" data-page="4">
+      <img src="images/Page 4.png" alt="Page 4">
+      <button class="play-button" onclick="playAudio(4)">🔊</button>
+    </div>
+    <div class="page" data-page="5">
+      <img src="images/Page 5.png" alt="Page 5">
+      <button class="play-button" onclick="playAudio(5)">🔊</button>
+    </div>
+    <div class="page" data-page="6">
+      <img src="images/Page 6.png" alt="Page 6">
+      <button class="play-button" onclick="playAudio(6)">🔊</button>
+    </div>
+    <div class="page" data-page="7">
+      <img src="images/Page 7.png" alt="Page 7">
+      <button class="play-button" onclick="playAudio(7)">🔊</button>
+    </div>
+    <div class="page" data-page="8">
+      <img src="images/Page 8.png" alt="Page 8">
+      <button class="play-button" onclick="playAudio(8)">🔊</button>
+    </div>
+  </div>
+
+  <audio id="audio-player" controls hidden></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
